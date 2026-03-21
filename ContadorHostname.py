@@ -174,9 +174,9 @@ if opcion == "Contador Hostname":
     st.write(f"🔹 Caracteres: {len(hostname)}/15")
 
     if len(hostname) == 15:
-        st.success("✔ Límite alcanzado")
+        st.success("Límite alcanzado")
 
-    if st.button("Validar Hostname"):
+    if st.button("Validar"):
         if len(hostname) == 0:
             st.warning("Ingrese un hostname")
         elif len(hostname) <= 15:
@@ -211,11 +211,11 @@ if opcion == "Contador Impresora":
     st.write(f"🔹 Caracteres: {len(impresora)}/25")
 
     if len(impresora) == 25:
-        st.success("✔ Límite alcanzado")
+        st.success("Límite alcanzado")
 
     if st.button("Validar"):
         if len(impresora) == 0:
-            st.warning("Ingrese nombre de impresora")
+            st.warning("Ingrese el nombre de impresora")
         elif len(impresora) <= 25:
             st.success(f"Nombre válido: {impresora}")
         else:
