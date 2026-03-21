@@ -3,9 +3,13 @@ from streamlit_lottie import st_lottie
 import requests
 
 # ---------------------------------------------------
-# CONFIG
+# CONFIG (SOLO UNA VEZ Y AL INICIO)
 # ---------------------------------------------------
-st.set_page_config(page_title="Contadores", layout="wide")
+st.set_page_config(
+    page_title="CharCount",
+    page_icon="🤖",
+    layout="centered"
+)
 
 # ---------------------------------------------------
 # ESTILO MODERNO PRO (AZURE)
@@ -155,7 +159,6 @@ opcion = st.sidebar.selectbox(
 if opcion == "Contador Hostname":
 
     st.markdown('<div class="glass">', unsafe_allow_html=True)
-
     st.title("Contador Hostname")
 
     st.selectbox(
@@ -179,10 +182,8 @@ if opcion == "Contador Hostname":
     if st.button("Validar"):
         if len(hostname) == 0:
             st.warning("Ingrese un hostname")
-        elif len(hostname) <= 15:
-            st.success(f"Hostname válido: {hostname}")
         else:
-            st.error("Máximo 15 caracteres")
+            st.success(f"Hostname válido: {hostname}")
 
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -192,7 +193,6 @@ if opcion == "Contador Hostname":
 if opcion == "Contador Impresora":
 
     st.markdown('<div class="glass">', unsafe_allow_html=True)
-
     st.title("Contador Impresora")
 
     st.selectbox(
@@ -216,10 +216,8 @@ if opcion == "Contador Impresora":
     if st.button("Validar"):
         if len(impresora) == 0:
             st.warning("Ingrese el nombre de impresora")
-        elif len(impresora) <= 25:
-            st.success(f"Nombre válido: {impresora}")
         else:
-            st.error("Máximo 25 caracteres")
+            st.success(f"Nombre válido: {impresora}")
 
     st.markdown('</div>', unsafe_allow_html=True)
 
