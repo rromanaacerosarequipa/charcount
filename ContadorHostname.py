@@ -153,14 +153,14 @@ if opcion == "Generador Contraseñas":
     st.title("Generador Contraseñas")
 
     cantidad = st.number_input(
-        "Cantidad de contraseñas",
+        "Cantidad",
         min_value=1,
         max_value=200,
         value=5
     )
 
     longitud = st.number_input(
-        "Longitud por contraseña",
+        "Longitud",
         min_value=4,
         max_value=50,
         value=12
