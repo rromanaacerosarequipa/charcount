@@ -147,13 +147,13 @@ if opcion == "Contador Impresora":
 # =====================================================
 # NUEVA OPCIÓN: GENERADOR DE CONTRASEÑAS
 # =====================================================
-if opcion == "Generador de Contraseñas":
+if opcion == "Generador de Contraseña":
 
     st.markdown('<div class="glass">', unsafe_allow_html=True)
-    st.title("🔐 Generador de Contraseñas")
+    st.title("🔐 Generador de Contraseña")
 
     cantidad = st.number_input(
-        "Cantidad de contraseñas",
+        "Cantidad de contraseña",
         min_value=1,
         max_value=200,
         value=5
@@ -169,7 +169,7 @@ if opcion == "Generador de Contraseñas":
     if st.button("Generar"):
         contraseñas = generar_contraseñas(cantidad, longitud)
 
-        st.success(f"🔒 {cantidad} contraseñas generadas:")
+        st.success(f"🔒 {cantidad} Contraseñas generadas:")
 
         for pwd in contraseñas:
             st.code(pwd)
