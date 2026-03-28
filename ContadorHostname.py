@@ -147,7 +147,7 @@ if opcion == "Contador Impresora":
 # =====================================================
 # NUEVA OPCIÓN: GENERADOR DE CONTRASEÑAS
 # =====================================================
-if opcion == "Generador de Contraseñas":
+if opcion == "Generador Contraseñas":
 
     st.markdown('<div class="glass">', unsafe_allow_html=True)
     st.title("Generador Contraseñas")
