@@ -147,10 +147,10 @@ if opcion == "Contador Impresora":
 # =====================================================
 # NUEVA OPCIÓN: GENERADOR DE CONTRASEÑAS
 # =====================================================
-if opcion == "Generador de Contraseña":
+if opcion == "Generador Contraseña":
 
     st.markdown('<div class="glass">', unsafe_allow_html=True)
-    st.title("Generador de Contraseña")
+    st.title("Generador Contraseña")
 
     cantidad = st.number_input(
         "Cantidad de contraseña",
