@@ -74,7 +74,7 @@ def generar_contraseñas(cantidad, longitud=12):
 # ---------------------------------------------------
 opcion = st.sidebar.selectbox(
     "Seleccione opción",
-    ["Contador Hostname", "Contador Impresora", "Generador Contraseña"]
+    ["Contador Hostname", "Contador Impresora", "Generador de Contraseñas"]
 )
 
 # =====================================================
